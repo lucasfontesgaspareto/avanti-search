@@ -94,6 +94,7 @@
       return (
         !isNaN(hash) &&
         typeof cookieRequest !== 'undefined' &&
+        JSON.stringify(localRequest) !== cookie &&
         localRequest.path === cookieRequest.path
       );
     },
