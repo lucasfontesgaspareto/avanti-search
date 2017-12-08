@@ -209,6 +209,7 @@
       if (self._checkDefaultParams()) {
         self._setDefaultParams();
         self._startFirst(1, true);
+        return this;
       }
 
       self.options.$result.find('> div > ul > li')
